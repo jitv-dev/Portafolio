@@ -1,5 +1,7 @@
 body{
-    background-image: url(../img/fondo.png);
+    background-image: url(../img/intentofondo.png);
+    background-size: cover;
+    
 }
 
 .borde-propio{
