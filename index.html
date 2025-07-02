@@ -12,50 +12,70 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-black border borde-propio border-2 fixed-top" data-bs-theme="dark">
-        <div class="container-fluid d-flex flex-wrap gap-2">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border borde-propio border-2 fixed-top"
+        data-bs-theme="dark">
+        <div class="container-fluid">
             <a class="navbar-brand me-3" href="#">Jeibi</a>
 
-            <div class="navbar-nav flex-row flex-wrap gap-3">
-                <a class="nav-link active " href="#">Sobre mi</a>
-                <a class="nav-link active" href="#">Habilidades</a>
-                <a class="nav-link active" href="#">Proyectos</a>
-                <a class="nav-link active" href="#">Contacto</a>
-            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <form class="d-flex ms-auto" role="search">
-                <input class="form-control bg-black text-light border-danger mx-2 search-outline-danger" type="search"
-                    placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-danger text-light" type="submit">Search</button>
-            </form>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="nav-link active" href="#">Sobre mi</a>
+                    <a class="nav-link active" href="#">Habilidades</a>
+                    <a class="nav-link active" href="#">Proyectos</a>
+                    <a class="nav-link active" href="#">Contacto</a>
+                </div>
+
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control bg-black text-light border-danger me-2 search-outline-danger"
+                        type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger text-light" type="submit">Search</button>
+                </form>
+            </div>
         </div>
     </nav>
 
-    <div class="d-flex justify-content-center align-items-center vh-100 position-relative">
-        <div class="card text-center bg-black" style="width: 64rem; font-size: 3.5rem;">
-            <div class="card-header text-light border borde-propio fw-bold">
-                Jeibi - Javier Torres <br>
-                Geólogo y Desarrollador Fullstack
+    <div class="container py-5">
+        <div class="row justify-content-center my-5 py-5">
+            <div class="col-11 col-sm-11 col-md-10 col-lg-9 col-xl-8 p-4">
+                <div class="card text-center bg-black"
+                    style="width: 100%; max-width: 900px; font-size: 3.5rem;">
+                    <div class="card-header text-light border borde-propio fw-bold p-3">
+                        Jeibi - Javier Torres <br>
+                        Geólogo y Desarrollador Fullstack
+                    </div>
+                    <img src="assets/img/cuboredstone.webp" alt=""
+                        class="position-absolute top-0 start-0 translate-middle" style="width: 100px;">
+                    <img src="assets/img/cuboredstone.webp" alt=""
+                        class="position-absolute top-0 start-100 translate-middle" style="width: 100px;">
+                    <img src="assets/img/redstonetrail.webp" alt="" class="position-absolute top-0 translate-middle"
+                        style="left: calc(120px)">
+                    <img src="assets/img/redstonetrail_flipped.png" alt=""
+                        class="position-absolute top-0 translate-middle" style="right: calc(-30px)">
+                    <ul class="list-group list-group-flush border borde-propio fs-5">
+                        <li class="list-group-item text-light bg-black p-3" style="font-size: 1.5rem;">Donde la ciencia
+                            y la tecnología se encuentran con la creatividad.</li>
+                    </ul>
+                </div>
             </div>
-            <img src="assets/img/cuboredstone.webp" alt="" class="position-absolute top-0 start-0 translate-middle" style="width: 100px;">
-            <img src="assets/img/cuboredstone.webp" alt="" class="position-absolute top-0 start-100 translate-middle" style="width: 100px;">
-            <img src="assets/img/redstonetrail.webp" alt="" class="position-absolute top-0 translate-middle" style="left: calc(120px)">
-            <img src="assets/img/redstonetrail_flipped.png" alt="" class="position-absolute top-0 translate-middle"
-                style="right: calc(-30px)">
-            <ul class="list-group list-group-flush border borde-propio fs-5">
-                <li class="list-group-item text-light bg-black" style="font-size: 1.5rem;">Donde la ciencia y la tecnología se encuentran con la creatividad.</li>
-            </ul>
         </div>
     </div>
 
-    <div class="position-fixed start-0 top-50 translate-middle-y d-flex flex-column bg-black border borde-propio p-2" style="font-size: 2rem;">
-        <a href="https://www.linkedin.com/in/javier-torres-valenz/" target="_blank" class="text-white barra-izquierda" title="LinkedIn">
+    <div class="position-fixed start-0 top-50 translate-middle-y d-none d-md-flex flex-column bg-black border borde-propio p-2 gap-1"
+        style="font-size: 2rem;">
+        <a href="https://www.linkedin.com/in/javier-torres-valenz/" target="_blank" class="text-white barra-izquierda"
+            title="LinkedIn">
             <i class="bi bi-linkedin"></i>
         </a>
         <a href="https://github.com/jitv-dev" target="_blank" class="text-white barra-izquierda" title="GitHub">
             <i class="bi bi-github"></i>
         </a>
-        <a href="assets/public/downloads/Cv_JavierTorres.pdf" download class="text-white barra-izquierda" title="Descargar CV">
+        <a href="assets/public/downloads/Cv_JavierTorres.pdf" download class="text-white barra-izquierda"
+            title="Descargar CV">
             <i class="bi bi-file-earmark-person"></i>
         </a>
         <a href="mailto:javier.torresvalenz@gmail.com" class="text-white barra-izquierda" title="Enviar email">
