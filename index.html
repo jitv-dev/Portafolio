@@ -87,13 +87,15 @@
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <h3 class="text-danger mb-4">Javier Torres <small class="text-light fs-5">(Jeibi)</small>
+                                <h3 class="text-danger mb-4">Javier Torres <small
+                                        class="text-light fs-5">(Jeibi)</small>
                                 </h3>
                                 <div class="d-flex mb-3">
                                     <i class="bi bi-mortarboard fs-4 text-danger me-3"></i>
                                     <div>
                                         <h5 class="mb-1">Técnico en Geología</h5>
-                                        <p class="mb-0 text-light-emphasis">Formación especializada en análisis de muestras
+                                        <p class="mb-0 text-light-emphasis">Formación especializada en análisis de
+                                            muestras
                                             y procesos geológicos</p>
                                     </div>
                                 </div>
@@ -107,23 +109,25 @@
                                                 muestras geológicas</li>
                                             <li><i class="bi bi-caret-right-fill text-danger small"></i> Ayudante de
                                                 laboratorio especializado</li>
-                                            <li><i class="bi bi-caret-right-fill text-danger small"></i> Conocimientos en
+                                            <li><i class="bi bi-caret-right-fill text-danger small"></i> Conocimientos
+                                                en
                                                 análisis de minerales</li>
                                         </ul>
                                     </div>
                                 </div>
-    
+
                                 <!-- Pasatiempos -->
                                 <div class="d-flex mb-3">
                                     <i class="bi bi-controller fs-4 text-danger me-3"></i>
                                     <div>
                                         <h5 class="mb-1">Pasión por la Tecnología</h5>
-                                        <p class="text-light-emphasis mb-1">Entusiasta de los videojuegos y apasionado por
-                                            la programación. Combinó mis conocimientos científicos con el desarrollo de
+                                        <p class="text-light-emphasis mb-1">Entusiasta de los videojuegos y apasionado
+                                            por
+                                            la programación. Combino mis conocimientos científicos con el desarrollo de
                                             software.</p>
                                     </div>
                                 </div>
-    
+
                                 <!-- Fitness -->
                                 <div class="d-flex">
                                     <i class="bi bi-heart-pulse fs-4 text-danger me-3"></i>
@@ -149,45 +153,52 @@
                     <div class="card-header fw-bold fs-3 text-center">
                         Habilidades
                     </div>
+                    <p class="text-center">(Presiona el ícono para ver más)</p>
                     <div class="card-body">
                         <div class="row text-center">
                             <div class="col-md-4 mb-4">
                                 <div class="p-3 border borde-propio rounded">
-                                    <i class="bi bi-code-square fs-1 text-danger"></i>
-                                    <h3 class="mt-2">Frontend</h3>
-                                    <ul class="list-unstyled">
-                                        <li>HTML5</li>
-                                        <li>CSS3</li>
-                                        <li>JavaScript</li>
-                                        <li>React</li>
-                                        <li>Bootstrap</li>
-                                    </ul>
+                                    <i class="bi bi-code-square fs-1 text-danger"  id="botonFrontEnd"></i>
+                                    <div>
+                                        <h3 class="mt-2">Frontend</h3>
+                                        <ul class="list-unstyled" id="listaFrontend" style="display: none;">
+                                            <li>HTML5</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>React</li>
+                                            <li>Bootstrap</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4 mb-4">
                                 <div class="p-3 border borde-propio rounded">
-                                    <i class="bi bi-server fs-1 text-danger"></i>
-                                    <h3 class="mt-2">Backend</h3>
-                                    <ul class="list-unstyled">
-                                        <li>Node.js</li>
-                                        <li>Express</li>
-                                        <li>Python</li>
-                                        <li>Django</li>
-                                        <li>MongoDB</li>
-                                    </ul>
+                                    <i class="bi bi-server fs-1 text-danger" id="botonBackEnd"></i>
+                                    <div>
+                                        <h3 class="mt-2">Backend</h3>
+                                        <ul class="list-unstyled" id="listaBackend" style="display: none;">
+                                            <li>Node.js</li>
+                                            <li>Express</li>
+                                            <li>Python</li>
+                                            <li>Django</li>
+                                            <li>MongoDB</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4 mb-4">
                                 <div class="p-3 border borde-propio rounded">
-                                    <i class="bi bi-gear fs-1 text-danger"></i>
-                                    <h3 class="mt-2">Otras</h3>
-                                    <ul class="list-unstyled">
-                                        <li>Git</li>
-                                        <li>GIS</li>
-                                        <li>Muestreo geológico</li>
-                                        <li>Análisis de datos</li>
-                                        <li>Preparación de muestras</li>
-                                    </ul>
+                                    <i class="bi bi-gear fs-1 text-danger" id="botonOtros"></i>
+                                    <div>
+                                        <h3 class="mt-2">Otras</h3>
+                                        <ul class="list-unstyled" id="listaOtros" style="display: none;">
+                                            <li>Git</li>
+                                            <li>GIS</li>
+                                            <li>Muestreo geológico</li>
+                                            <li>Análisis de datos</li>
+                                            <li>Preparación de muestras</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -209,49 +220,390 @@
                         <div class="row">
                             <div class="col-md-6 mb-4">
                                 <div class="card bg-dark text-light border borde-propio h-100">
-                                    <img src="https://via.placeholder.com/400x200" class="card-img-top"
-                                        alt="Proyecto 1">
+                                    <img src="https://founderz.com/wp-content/uploads/2023/03/5-amenazas-de-ciberseguridad-2023.jpg"
+                                        class="card-img-top" alt="Proyecto 1">
                                     <div class="card-body">
                                         <h5 class="card-title">Página Ciber Seguridad</h5>
-                                        <p class="card-text">Pagina solicitada por el bootcamp de skillnest, la cual solicitaba el uso de Acordeón, Carrusel, formularios y métodos de contacto, además de que fuese responsiva.</p>
-                                        <!-- Los href deberian llevar a otro html con vista previa de cada proyecto -->
-                                        <a href="#" class="btn btn-outline-danger">Ver más</a>
+                                        <p class="card-text">Pagina solicitada por el bootcamp de skillnest, la cual
+                                            solicitaba el uso de Acordeón, Carrusel, formularios y métodos de contacto,
+                                            además de que fuese responsiva.</p>
+                                        <!-- Button trigger modal -->
+                                        <div>
+                                            <button type="button" class="btn borde-propio border btn-outline-danger"
+                                                data-bs-toggle="modal" data-bs-target="#proyecto1Modal">
+                                                Ver más
+                                            </button>
+                                        </div>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="proyecto1Modal" tabindex="-1"
+                                            aria-labelledby="proyecto1ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="proyecto1ModalLabel">Página
+                                                            Ciber Seguridad</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div id="proyecto1Captions" class="carousel slide"
+                                                            data-bs-ride="carousel">
+                                                            <div class="carousel-indicators">
+                                                                <button type="button"
+                                                                    data-bs-target="#proyecto1Captions"
+                                                                    data-bs-slide-to="0" class="active"
+                                                                    aria-current="true" aria-label="Slide 1"></button>
+                                                                <button type="button"
+                                                                    data-bs-target="#proyecto1Captions"
+                                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                                <button type="button"
+                                                                    data-bs-target="#proyecto1Captions"
+                                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                            </div>
+                                                            <div class="carousel-inner">
+                                                                <div class="carousel-item active position-relative">
+                                                                    <img src="assets/img/ciber1.png"
+                                                                        class="d-block w-100" alt="...">
+                                                                    <div class="position-absolute bottom-0 start-0 end-0 p-3"
+                                                                        style="background: rgba(0,0,0,0.7);">
+                                                                        <h5 class="text-light">Página principal</h5>
+                                                                        <p class="text-light mb-0">Contiene su
+                                                                            respectivo navbar para cambiar entre
+                                                                            páginas.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="carousel-item position-relative">
+                                                                    <img src="assets/img/ciber2.png"
+                                                                        class="d-block w-100" alt="...">
+                                                                    <div class="position-absolute bottom-0 start-0 end-0 p-3"
+                                                                        style="background: rgba(0,0,0,0.7);">
+                                                                        <h5 class="text-light">Página amenazas</h5>
+                                                                        <p class="text-light mb-0">Utilización del
+                                                                            acordeón para separar cada amenaza con su
+                                                                            respectiva característica y forma de
+                                                                            protegerse.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="carousel-item position-relative">
+                                                                    <img src="assets/img/ciber3.png"
+                                                                        class="d-block w-100" alt="...">
+                                                                    <div class="position-absolute bottom-0 start-0 end-0 p-3"
+                                                                        style="background: rgba(0,0,0,0.7);">
+                                                                        <h5 class="text-light">Página consejos</h5>
+                                                                        <p class="text-light mb-0">Contiene consejos
+                                                                            para protección, además de un test con su
+                                                                            resultado y un formulario de contacto</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <button class="carousel-control-prev" type="button"
+                                                                data-bs-target="#proyecto1Captions"
+                                                                data-bs-slide="prev">
+                                                                <span class="carousel-control-prev-icon"
+                                                                    aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Previous</span>
+                                                            </button>
+                                                            <button class="carousel-control-next" type="button"
+                                                                data-bs-target="#proyecto1Captions"
+                                                                data-bs-slide="next">
+                                                                <span class="carousel-control-next-icon"
+                                                                    aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Next</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Proyecto 2 -->
                             <div class="col-md-6 mb-4">
                                 <div class="card bg-dark text-light border borde-propio h-100">
-                                    <img src="https://via.placeholder.com/400x200" class="card-img-top"
+                                    <img src="assets/img/enconstruccion.png" class="card-img-top"
                                         alt="Proyecto 2">
                                     <div class="card-body">
                                         <h5 class="card-title">Proyecto 2</h5>
-                                        <p class="card-text">En proceso :p</p>
+                                        <p class="card-text">En proceso</p>
                                         <!-- Los href deberian llevar a otro html con vista previa de cada proyecto -->
-                                        <a href="#" class="btn btn-outline-danger">Ver más</a>
+                                        <div>
+                                            <button type="button" class="btn borde-propio border btn-outline-danger"
+                                                data-bs-toggle="modal" data-bs-target="#proyecto2Modal">
+                                                Ver más
+                                            </button>
+                                        </div>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="proyecto2Modal" tabindex="-1"
+                                            aria-labelledby="proyecto2ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="proyecto2ModalLabel">Modal
+                                                            title</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div id="proyecto2Captions" class="carousel slide">
+                                                            <div class="carousel-indicators">
+                                                                <button type="button"
+                                                                    data-bs-target="#proyecto2Captions"
+                                                                    data-bs-slide-to="0" class="active"
+                                                                    aria-current="true" aria-label="Slide 1"></button>
+                                                                <button type="button"
+                                                                    data-bs-target="#proyecto2Captions"
+                                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                                <button type="button"
+                                                                    data-bs-target="#proyecto2Captions"
+                                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                            </div>
+                                                            <div class="carousel-inner">
+                                                                <div class="carousel-item active">
+                                                                    <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/14EC6/production/_124820758_pug1.jpg.webp"
+                                                                        class="d-block w-100" alt="...">
+                                                                    <div class="carousel-caption d-none d-md-block">
+                                                                        <h5>First slide label</h5>
+                                                                        <p>Some representative placeholder content for
+                                                                            the first slide.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="carousel-item">
+                                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/My_pug.jpg/800px-My_pug.jpg"
+                                                                        class="d-block w-100" alt="...">
+                                                                    <div class="carousel-caption d-none d-md-block">
+                                                                        <h5>Second slide label</h5>
+                                                                        <p>Some representative placeholder content for
+                                                                            the second slide.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="carousel-item">
+                                                                    <img src="https://kamanpet.cl/wp-content/uploads/2024/04/raza-pug-o-carlino.webp"
+                                                                        class="d-block w-100" alt="...">
+                                                                    <div class="carousel-caption d-none d-md-block">
+                                                                        <h5>Third slide label</h5>
+                                                                        <p>Some representative placeholder content for
+                                                                            the third slide.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <button class="carousel-control-prev" type="button"
+                                                                data-bs-target="#proyecto2Captions"
+                                                                data-bs-slide="prev">
+                                                                <span class="carousel-control-prev-icon"
+                                                                    aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Previous</span>
+                                                            </button>
+                                                            <button class="carousel-control-next" type="button"
+                                                                data-bs-target="#proyecto2Captions"
+                                                                data-bs-slide="next">
+                                                                <span class="carousel-control-next-icon"
+                                                                    aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Next</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="card bg-dark text-light border borde-propio h-100">
-                                    <img src="https://via.placeholder.com/400x200" class="card-img-top"
+                                    <img src="assets/img/enconstruccion.png" class="card-img-top"
                                         alt="Proyecto 3">
                                     <div class="card-body">
                                         <h5 class="card-title">Proyecto 3</h5>
-                                        <p class="card-text">En proceso :p</p>
-                                        <!-- Los href deberian llevar a otro html con vista previa de cada proyecto -->
-                                        <a href="#" class="btn btn-outline-danger">Ver más</a>
+                                        <p class="card-text">En proceso</p>
+                                        <!-- Boton modal -->
+                                        <div>
+                                            <button type="button" class="btn borde-propio border btn-outline-danger"
+                                                data-bs-toggle="modal" data-bs-target="#proyecto3Modal">
+                                                Ver más
+                                            </button>
+                                        </div>
+                                        <div class="modal fade" id="proyecto3Modal" tabindex="-1"
+                                            aria-labelledby="proyecto3ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="proyecto3ModalLabel">Modal
+                                                            title</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div id="proyecto3Captions" class="carousel slide">
+                                                            <div class="carousel-indicators">
+                                                                <button type="button"
+                                                                    data-bs-target="#proyecto3Captions"
+                                                                    data-bs-slide-to="0" class="active"
+                                                                    aria-current="true" aria-label="Slide 1"></button>
+                                                                <button type="button"
+                                                                    data-bs-target="#proyecto3Captions"
+                                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                                <button type="button"
+                                                                    data-bs-target="#proyecto3Captions"
+                                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                            </div>
+                                                            <div class="carousel-inner">
+                                                                <div class="carousel-item active">
+                                                                    <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/14EC6/production/_124820758_pug1.jpg.webp"
+                                                                        class="d-block w-100" alt="...">
+                                                                    <div class="carousel-caption d-none d-md-block">
+                                                                        <h5>First slide label</h5>
+                                                                        <p>Some representative placeholder content for
+                                                                            the first slide.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="carousel-item">
+                                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/My_pug.jpg/800px-My_pug.jpg"
+                                                                        class="d-block w-100" alt="...">
+                                                                    <div class="carousel-caption d-none d-md-block">
+                                                                        <h5>Second slide label</h5>
+                                                                        <p>Some representative placeholder content for
+                                                                            the second slide.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="carousel-item">
+                                                                    <img src="https://kamanpet.cl/wp-content/uploads/2024/04/raza-pug-o-carlino.webp"
+                                                                        class="d-block w-100" alt="...">
+                                                                    <div class="carousel-caption d-none d-md-block">
+                                                                        <h5>Third slide label</h5>
+                                                                        <p>Some representative placeholder content for
+                                                                            the third slide.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <button class="carousel-control-prev" type="button"
+                                                                data-bs-target="#proyecto3Captions"
+                                                                data-bs-slide="prev">
+                                                                <span class="carousel-control-prev-icon"
+                                                                    aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Previous</span>
+                                                            </button>
+                                                            <button class="carousel-control-next" type="button"
+                                                                data-bs-target="#proyecto3Captions"
+                                                                data-bs-slide="next">
+                                                                <span class="carousel-control-next-icon"
+                                                                    aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Next</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="card bg-dark text-light border borde-propio h-100">
-                                    <img src="https://via.placeholder.com/400x200" class="card-img-top"
+                                    <img src="assets/img/enconstruccion.png" class="card-img-top"
                                         alt="Proyecto 4">
                                     <div class="card-body">
                                         <h5 class="card-title">Proyecto 4</h5>
-                                        <p class="card-text">En proceso :p</p>
-                                        <!-- Los href deberian llevar a otro html con vista previa de cada proyecto -->
-                                        <a href="#" class="btn btn-outline-danger">Ver más</a>
+                                        <p class="card-text">En proceso</p>
+                                        <!-- Boton modal -->
+                                        <div>
+                                            <button type="button" class="btn borde-propio border btn-outline-danger"
+                                                data-bs-toggle="modal" data-bs-target="#proyecto4Modal">
+                                                Ver más
+                                            </button>
+                                        </div>
+                                        <div class="modal fade" id="proyecto4Modal" tabindex="-1"
+                                            aria-labelledby="proyecto4ModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="proyecto4ModalLabel">Modal
+                                                            title</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div id="proyecto4Captions" class="carousel slide">
+                                                            <div class="carousel-indicators">
+                                                                <button type="button"
+                                                                    data-bs-target="#proyecto4Captions"
+                                                                    data-bs-slide-to="0" class="active"
+                                                                    aria-current="true" aria-label="Slide 1"></button>
+                                                                <button type="button"
+                                                                    data-bs-target="#proyecto4Captions"
+                                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                                <button type="button"
+                                                                    data-bs-target="#proyecto4Captions"
+                                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                            </div>
+                                                            <div class="carousel-inner">
+                                                                <div class="carousel-item active">
+                                                                    <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/14EC6/production/_124820758_pug1.jpg.webp"
+                                                                        class="d-block w-100" alt="...">
+                                                                    <div class="carousel-caption d-none d-md-block">
+                                                                        <h5>First slide label</h5>
+                                                                        <p>Some representative placeholder content for
+                                                                            the first slide.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="carousel-item">
+                                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/My_pug.jpg/800px-My_pug.jpg"
+                                                                        class="d-block w-100" alt="...">
+                                                                    <div class="carousel-caption d-none d-md-block">
+                                                                        <h5>Second slide label</h5>
+                                                                        <p>Some representative placeholder content for
+                                                                            the second slide.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="carousel-item">
+                                                                    <img src="https://kamanpet.cl/wp-content/uploads/2024/04/raza-pug-o-carlino.webp"
+                                                                        class="d-block w-100" alt="...">
+                                                                    <div class="carousel-caption d-none d-md-block">
+                                                                        <h5>Third slide label</h5>
+                                                                        <p>Some representative placeholder content for
+                                                                            the third slide.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <button class="carousel-control-prev" type="button"
+                                                                data-bs-target="#proyecto4Captions"
+                                                                data-bs-slide="prev">
+                                                                <span class="carousel-control-prev-icon"
+                                                                    aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Previous</span>
+                                                            </button>
+                                                            <button class="carousel-control-next" type="button"
+                                                                data-bs-target="#proyecto4Captions"
+                                                                data-bs-slide="next">
+                                                                <span class="carousel-control-next-icon"
+                                                                    aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Next</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -309,7 +661,7 @@
                                             placeholder="Mensaje" required></textarea>
                                     </div>
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-outline-danger">Enviar</button>
+                                        <button type="submit" class="btn btn-outline-danger" id="formularioContacto">Enviar</button>
                                     </div>
                                 </form>
                             </div>
@@ -319,6 +671,14 @@
             </div>
         </div>
     </section>
+
+    <div id="formularioEnviado" class="container mt-5" style="display: none;">
+        <div class="alert alert-primary">
+            <h4>Solicitud de contacto enviada con éxito :D</h4>
+        </div>
+    </div>
+
+
 
     <!-- Barra izquierda contacto -->
     <div class="position-fixed start-0 top-50 translate-middle-y d-none d-md-flex flex-column bg-black border borde-propio p-2 gap-1"
@@ -330,8 +690,7 @@
         <a href="https://github.com/jitv-dev" target="_blank" class="text-white barra-izquierda" title="GitHub">
             <i class="bi bi-github"></i>
         </a>
-        <a href="assets/public/downloads/Cv_JavierTorres.pdf" class="text-white barra-izquierda"
-            title="Descargar CV">
+        <a href="assets/public/downloads/Cv_JavierTorres.pdf" class="text-white barra-izquierda" title="Descargar CV">
             <i class="bi bi-file-earmark-person"></i>
         </a>
         <a href="mailto:javier.torresvalenz@gmail.com" class="text-white barra-izquierda" title="Enviar email">
